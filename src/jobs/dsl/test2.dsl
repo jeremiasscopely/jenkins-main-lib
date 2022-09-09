@@ -1,6 +1,5 @@
 import com.poc.common.PipelineJob
 
-@Library('generic-lib') _
 
 new PipelineJob(
         name: "job_test",

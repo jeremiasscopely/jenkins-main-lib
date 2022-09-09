@@ -13,24 +13,6 @@ class PipelineJob {
 
     Job build(DslFactory context) {
 
-        String jobFolder = JobProperties.folder(name)
-        if (jobFolder!='') {
-            String folderName
-            jobFolder.tokenize('/').each {
-                context.println('Creating folder: ' + it)
-                if (folderName) {
-                    folderName = folderName + "/" + it
-                } else {
-                    folderName = it
-                }
-
-                // Workaround for the error that folders can't be created inside a class
-                // happening with the job-dsl plugin v1.78
-                if (!Jenkins.testMode()) {
-                    context.folder(folderName)
-                }
-            }
-        }
 
         Job job = context.pipelineJob(JobProperties.name(name))
         job.description description.stripIndent() + "<br>This job is managed by code, do not edit manually. You can find the code <a href=\"https://github.com/scopely/jenkins-toolbelt\">here</a>."

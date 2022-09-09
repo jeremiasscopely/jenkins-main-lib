@@ -1,4 +1,4 @@
-package jobs.dsl.common
+
 
 import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory

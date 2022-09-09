@@ -1,10 +1,11 @@
+import com.poc.common.PipelineJob
+
 @Library('generic-lib') _
 
-job('example2') {
-  steps {
-    shell('echo Hello World!')
-  }
-  steps {
-    sayHello()
-  }
-}
+new PipelineJob(
+        name: "job_test",
+        description: "testing",
+        scriptText: """@Library('main_lib')_
+            test2()
+        """
+).build(this)

@@ -1,4 +1,4 @@
-import com.poc.common.PipelineJob
+import jobs.dsl.common.PipelineJob
 
 
 new PipelineJob(

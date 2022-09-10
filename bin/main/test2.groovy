@@ -12,7 +12,9 @@ def call(){
         }
       }
       stage("print"){
-        sayHello()
+        steps{
+          sayHello()
+        }
       }
     }
 

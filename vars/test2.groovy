@@ -6,7 +6,9 @@ def call(){
 
     stages{
       stage("print"){
-        print("test!!")
+        steps{
+          echo "Testado!!!!"
+        }
       }
     }
 

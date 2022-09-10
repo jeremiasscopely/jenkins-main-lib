@@ -18,7 +18,9 @@ def call(){
       }
       stage("Call library SLACK file"){
         steps{
-          libSlack(operationName: 'callMehod1')
+            script {
+              libSlack(operationName: 'callMehod1')
+            }
         }
       }
     }

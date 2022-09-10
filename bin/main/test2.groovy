@@ -11,7 +11,6 @@ def call(){
           echo "Testado!!!!"
         }
       }
-      sayHello()
     }
 
   }

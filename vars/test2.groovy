@@ -13,7 +13,7 @@ def call(){
           echo "Testado!!!!"
         }
       }
-      sayHello()
+      // sayHello()
     }
 
   }

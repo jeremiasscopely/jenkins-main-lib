@@ -11,8 +11,6 @@ def call(){
       stage("print"){
         steps{
           echo "Testado!!!!"
-        }
-        steps{
           echo imported
         }
       }

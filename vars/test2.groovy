@@ -1,7 +1,7 @@
 def call(){
 
-  def imported = libraryResource "lib/common/commonSteps.groovy"
   
+  @Library("generic-lib") _
 
   pipeline {
 
@@ -11,9 +11,9 @@ def call(){
       stage("print"){
         steps{
           echo "Testado!!!!"
-          echo imported
         }
       }
+      sayHello()
     }
 
   }

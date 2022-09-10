@@ -12,7 +12,9 @@ def call(){
         steps{
           echo "Testado!!!!"
         }
-        echo imported
+        steps{
+          echo imported
+        }
       }
     }
 

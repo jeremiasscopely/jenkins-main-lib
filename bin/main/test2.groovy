@@ -11,7 +11,9 @@ def call(){
           echo "Testado!!!!"
         }
       }
-      sayHello()
+      stage("print"){
+        sayHello()
+      }
     }
 
   }

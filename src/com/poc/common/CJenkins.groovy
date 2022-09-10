@@ -1,6 +1,5 @@
-package com.poc.common
 
-class Jenkins {
+class CJenkins {
 
     static String getParameter(String name) {
         try {

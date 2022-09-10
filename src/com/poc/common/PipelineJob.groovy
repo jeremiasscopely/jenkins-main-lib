@@ -1,4 +1,3 @@
-package com.poc.common
 
 import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory
@@ -26,7 +25,7 @@ class PipelineJob {
 
                 // Workaround for the error that folders can't be created inside a class
                 // happening with the job-dsl plugin v1.78
-                if (!Jenkins.testMode()) {
+                if (!CJenkins.testMode()) {
                     context.folder(folderName)
                 }
             }
@@ -42,7 +41,7 @@ class PipelineJob {
             artifactNumToKeep 10
         }
 
-        if (Jenkins.getBooleanParameter('DEBUG')) {
+        if (CJenkins.getBooleanParameter('DEBUG')) {
             job.disabled(true)
         }
 

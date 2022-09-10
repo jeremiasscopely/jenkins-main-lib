@@ -1,4 +1,3 @@
-package com.poc.common
 
 
 class JobProperties {
@@ -19,8 +18,8 @@ class JobProperties {
             folderName=jobName.substring(0, jobName.lastIndexOf('/'))
         }
 
-        if (Jenkins.getBooleanParameter('debug')) {
-            String branch = Jenkins.getParameter('branch')
+        if (CJenkins.getBooleanParameter('debug')) {
+            String branch = CJenkins.getParameter('branch')
 
             if (folderName) {
                 folderName = "/" + folderName
@@ -37,14 +36,14 @@ class JobProperties {
 
     static String postfix() {
         String postfix = ''
-        if (Jenkins.getBooleanParameter('debug')) {
+        if (CJenkins.getBooleanParameter('debug')) {
             postfix = '.dbg'
         }
         return postfix
     }
 
     static String name(String jobName) {
-        if (Jenkins.getBooleanParameter('debug')) {
+        if (CJenkins.getBooleanParameter('debug')) {
             String folderName = folder(jobName)
             if (jobName.contains('/')) {
                 jobName = nameWithoutFolders(jobName)

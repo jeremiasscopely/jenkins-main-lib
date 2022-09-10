@@ -1,6 +1,7 @@
 def call(){
 
   def imported = libraryResource "lib/common/commonSteps.groovy"
+  
 
   pipeline {
 
@@ -11,7 +12,7 @@ def call(){
         steps{
           echo "Testado!!!!"
         }
-        imported.common()
+        echo imported
       }
     }
 

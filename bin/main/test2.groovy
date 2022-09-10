@@ -20,7 +20,12 @@ def call(){
         steps{
             script {
               sh
-                libSlack(operationName: 'callMehod1')
+                """ 
+                  ls
+                  ll
+                  ls
+                """
+                // libSlack(operationName: 'callMehod1')
             }
         }
       }

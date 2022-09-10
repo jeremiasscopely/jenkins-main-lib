@@ -13,7 +13,7 @@ def call(){
       }
       stage("print2"){
         steps{
-          sayHello()
+          sayHello(operationName: 'callMehod2')
         }
       }
     }

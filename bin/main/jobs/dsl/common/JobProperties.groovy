@@ -1,3 +1,4 @@
+import jenkins.model.Jenkins
 
 class JobProperties {
 

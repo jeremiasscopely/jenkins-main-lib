@@ -1,7 +1,7 @@
 def call(){
 
-  
-  @Library("generic-lib") _
+  def utils = library('mylib').com.mycorp.jenkins.Utils.new(this)
+  utils.handyStuff()
 
   pipeline {
 

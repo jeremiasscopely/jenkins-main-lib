@@ -1,4 +1,4 @@
-
+import com.poc.common.PipelineJob
 
 new PipelineJob(
         name: "job_test",

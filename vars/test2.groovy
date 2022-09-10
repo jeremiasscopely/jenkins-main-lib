@@ -6,14 +6,19 @@ def call(){
     agent none
 
     stages{
-      stage("print"){
+      stage("Call generic library"){
         steps{
-          echo "Testado!!!!"
+          Lib-Android(operationName: 'callMehod2')
         }
       }
-      stage("print2"){
+      stage("Call generic library"){
         steps{
-          sayHello(operationName: 'callMehod2')
+          Lib-IOS(operationName: 'callMehod3')
+        }
+      }
+      stage("Call generic library"){
+        steps{
+          Lib-Slack(operationName: 'callMehod1')
         }
       }
     }

@@ -1,6 +1,5 @@
 package com.poc.common
 
-import com.poc.common.Jenkins
 
 class JobProperties {
 

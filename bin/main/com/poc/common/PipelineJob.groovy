@@ -1,4 +1,4 @@
-
+package com.poc.common
 
 import javaposse.jobdsl.dsl.Job
 import javaposse.jobdsl.dsl.DslFactory

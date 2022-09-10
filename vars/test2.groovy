@@ -1,5 +1,7 @@
 def call(){
 
+  def imported = libraryResource "lib/common/commonSteps.groovy"
+
   pipeline {
 
     agent none
@@ -9,6 +11,7 @@ def call(){
         steps{
           echo "Testado!!!!"
         }
+        imported.common()
       }
     }
 

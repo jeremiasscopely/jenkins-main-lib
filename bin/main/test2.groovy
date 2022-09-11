@@ -7,12 +7,22 @@ def call(String nodes){
     agent none
 
     stages {
+      stage("echoooooooo"){
+        steps{
+          echo "${nodes}"
+        }
+      }
+      stage("echoooooooo2"){
+        steps{
+          echo "${splitedNodes}"
+        }
+      }
       stage("clean") {
         matrix {
           axes {
             axis {
               name 'NODE'
-              values '$splitedNodes'
+              values '${splitedNodes}'
             }
           }
           stages {

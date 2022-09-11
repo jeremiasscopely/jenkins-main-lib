@@ -7,6 +7,6 @@ new PipelineJob(
         description: "testing",
         // scriptText: """@Library('main_lib',) _
         scriptText: """@Library(['main_lib', 'generic-lib']) _
-            test2(${nodes})
+            test2('${nodes}')
         """
 ).build(this)

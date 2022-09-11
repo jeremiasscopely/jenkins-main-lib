@@ -14,7 +14,7 @@ def call(String nodes){
       }
       stage("echoooooooo2"){
         steps{
-          echo splitedNodes.length
+          echo '${splitedNodes.length}'
         }
       }
       stage("clean") {

@@ -14,7 +14,7 @@ def call(String nodes){
       }
       stage("echoooooooo2"){
         steps{
-          echo '${splitedNodes.length}'
+          echo splitedNodes[0]
         }
       }
       stage("clean") {
@@ -34,21 +34,21 @@ def call(String nodes){
           }
         }
       }
-      stage("Call library Android file"){
-        steps{
-          libAndroid(operationName: 'callMehod2')
-        }
-      }
-      stage("Call library IOS file"){
-        steps{
-          libIOS(operationName: 'callMehod3')
-        }
-      }
-      stage("Call library SLACK file"){
-        steps{
-          libSlack(operationName: 'callMehod1')
-        }
-      }
+      // stage("Call library Android file"){
+      //   steps{
+      //     libAndroid(operationName: 'callMehod2')
+      //   }
+      // }
+      // stage("Call library IOS file"){
+      //   steps{
+      //     libIOS(operationName: 'callMehod3')
+      //   }
+      // }
+      // stage("Call library SLACK file"){
+      //   steps{
+      //     libSlack(operationName: 'callMehod1')
+      //   }
+      // }
     }
 
   }

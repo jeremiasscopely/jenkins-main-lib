@@ -1,6 +1,6 @@
 
 def returnNodes(){
-    String nodes = 'nodetest1-nodetest2-nodetest3'
+    String nodes = "nodetest1-nodetest2-nodetest3"
     return nodes 
 }
 

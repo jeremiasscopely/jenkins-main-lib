@@ -24,9 +24,6 @@ def call(String nodes){
           }
         }
       }
-    }
-
-    stages{
       stage("Call library Android file"){
         steps{
           libAndroid(operationName: 'callMehod2')

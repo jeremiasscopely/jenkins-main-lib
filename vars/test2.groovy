@@ -1,30 +1,30 @@
 def call(String nodes){
 
-  String splitedNodes = nodes.split(",")
+  // String splitedNodes = nodes.split(",")
 
   pipeline {
 
     agent none
 
-    stages {
-      stage("clean") {
-        matrix {
-          axes {
-            axis {
-              name 'NODE'
-              values splitedNodes
-            }
-          }
-          stages {
-              stage('Put offline') {
-                steps {
-                  echo "Putting node ${NODE} offline"
-                }
-              }
-          }
-        }
-      }
-    }
+    // stages {
+    //   stage("clean") {
+    //     matrix {
+    //       axes {
+    //         axis {
+    //           name 'NODE'
+    //           values splitedNodes
+    //         }
+    //       }
+    //       stages {
+    //           stage('Put offline') {
+    //             steps {
+    //               echo "Putting node ${NODE} offline"
+    //             }
+    //           }
+    //       }
+    //     }
+    //   }
+    // }
 
     stages{
       stage("Call library Android file"){

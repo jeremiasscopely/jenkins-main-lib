@@ -1,5 +1,6 @@
-def call(String[] nodes){
+def call(String nodes){
 
+  String splitedNodes = nodes.split(",")
 
   pipeline {
 
@@ -11,7 +12,7 @@ def call(String[] nodes){
           axes {
             axis {
               name 'NODE'
-              values nodes
+              values splitedNodes
             }
           }
           stages {

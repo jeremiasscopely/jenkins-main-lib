@@ -1,5 +1,6 @@
 
-List nodes = ['nodetest1', 'nodetest2'] 
+String nodes = 'nodetest1,nodetest2,nodetest3' 
+
 
 new PipelineJob(
         name: "job_test",

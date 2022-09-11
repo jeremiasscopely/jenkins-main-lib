@@ -1,6 +1,5 @@
 def call(){
 
-  String[] splitedNodes = nodes.split("-")
 
   pipeline {
 

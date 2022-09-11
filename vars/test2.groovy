@@ -12,7 +12,7 @@ def call(String nodes){
           axes {
             axis {
               name 'NODE'
-              values splitedNodes
+              values '$splitedNodes'
             }
           }
           stages {

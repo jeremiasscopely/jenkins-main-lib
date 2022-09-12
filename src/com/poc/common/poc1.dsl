@@ -12,4 +12,4 @@ Job job = new PipelineJob(
         """
 ).build(this)
 
-job.disabled(true)
+// job.disabled(true)

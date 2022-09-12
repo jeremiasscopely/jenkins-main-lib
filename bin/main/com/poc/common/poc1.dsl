@@ -1,11 +1,9 @@
-
-def returnNodes(){
-    String nodes = "nodetest1-nodetest2-nodetest3"
-    return nodes 
-}
+import javaposse.jobdsl.dsl.Job
 
 
-new PipelineJob(
+
+
+Job job = new PipelineJob(
         name: "job_test",
         description: "testing",
         // scriptText: """@Library('main_lib',) _
@@ -13,3 +11,5 @@ new PipelineJob(
             poc1()
         """
 ).build(this)
+
+job.disabled(true)

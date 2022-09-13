@@ -11,5 +11,3 @@ Job job = new PipelineJob(
             poc1()
         """
 ).build(this)
-
-// job.disabled(true)

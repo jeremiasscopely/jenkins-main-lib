@@ -8,17 +8,17 @@ def call(){
     stages {
       stage("Call library Android file"){
         steps{
-          lib_sch_Android(operationName: 'callMehod2')
+          lib_sch_android(operationName: 'callMehod2')
         }
       }
       stage("Call library IOS file"){
         steps{
-          lib_sch_IOS(operationName: 'callMehod3')
+          lib_sch_ios(operationName: 'callMehod3')
         }
       }
       stage("Call library SLACK file"){
         steps{
-          lib_sch_Slack(operationName: 'callMehod1')
+          lib_sch_slack(operationName: 'callMehod1')
         }
       }
     }

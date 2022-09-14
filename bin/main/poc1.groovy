@@ -23,7 +23,7 @@ def call(){
       }
       stage("Call other lib"){
         steps{
-          mlib_test(operationName: 'callMehod1')
+          mlib_test2(operationName: 'callMehod1')
         }
       }
     }

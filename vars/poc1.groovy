@@ -21,6 +21,11 @@ def call(){
           lib_sch_slack(operationName: 'callMehod1')
         }
       }
+      stage("Call other lib"){
+        steps{
+          mlib_test(operationName: 'callMehod1')
+        }
+      }
     }
 
   }

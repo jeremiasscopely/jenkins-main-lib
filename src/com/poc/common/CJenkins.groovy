@@ -1,4 +1,4 @@
-package com.poc.common
+
 
 class CJenkins {
 
